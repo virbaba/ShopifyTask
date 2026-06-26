@@ -25,8 +25,8 @@ export default function App() {
         
         {showForm && (
           <Form className={styles.form} method="post" action="/auth/login">
-            <div className={styles.label}>
-              <label htmlFor="shop-domain">Shop domain</label>
+            <label htmlFor="shop-domain" className={styles.labelHeader}>Shop domain</label>
+            <div className={styles.inputGroup}>
               <input 
                 id="shop-domain"
                 className={styles.input} 
@@ -35,11 +35,11 @@ export default function App() {
                 placeholder="my-shop-domain.myshopify.com"
                 required
               />
-              <span className={styles.labelSpan}>e.g: my-shop-domain.myshopify.com</span>
+              <button className={styles.button} type="submit">
+                Log in
+              </button>
             </div>
-            <button className={styles.button} type="submit">
-              Log in
-            </button>
+            <span className={styles.labelSpan}>e.g: my-shop-domain.myshopify.com</span>
           </Form>
         )}
         
