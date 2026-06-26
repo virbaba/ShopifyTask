@@ -18,34 +18,43 @@ export default function App() {
   return (
     <div className={styles.index}>
       <div className={styles.content}>
-        <h1 className={styles.heading}>A short heading about [your app]</h1>
+        <h1 className={styles.heading}>Announcement Banner App</h1>
         <p className={styles.text}>
-          A tagline about [your app] that describes your value proposition.
+          Engage your storefront visitors instantly. Configure floating banners from the Shopify Admin, stored securely in MongoDB and synchronized in real-time with Shopify Shop Metafields.
         </p>
+        
         {showForm && (
           <Form className={styles.form} method="post" action="/auth/login">
-            <label className={styles.label}>
-              <span>Shop domain</span>
-              <input className={styles.input} type="text" name="shop" />
-              <span>e.g: my-shop-domain.myshopify.com</span>
-            </label>
+            <div className={styles.label}>
+              <label htmlFor="shop-domain">Shop domain</label>
+              <input 
+                id="shop-domain"
+                className={styles.input} 
+                type="text" 
+                name="shop" 
+                placeholder="my-shop-domain.myshopify.com"
+                required
+              />
+              <span className={styles.labelSpan}>e.g: my-shop-domain.myshopify.com</span>
+            </div>
             <button className={styles.button} type="submit">
-              Log in
+              Log in / Install
             </button>
           </Form>
         )}
+        
         <ul className={styles.list}>
           <li>
-            <strong>Product feature</strong>. Some detail about your feature and
-            its benefit to your customer.
+            <strong>Admin Dashboard</strong>
+            A beautiful Polaris-themed control interface to customize, preview, and update announcement content directly in Shopify.
           </li>
           <li>
-            <strong>Product feature</strong>. Some detail about your feature and
-            its benefit to your customer.
+            <strong>MERN Stack Log</strong>
+            Uses a MongoDB database to securely store every announcement update with audit trails and timestamps.
           </li>
           <li>
-            <strong>Product feature</strong>. Some detail about your feature and
-            its benefit to your customer.
+            <strong>App Embed Extension</strong>
+            A modern, performant Shopify Theme App Extension that displays the banner globally with zero code footprint on your theme files.
           </li>
         </ul>
       </div>
