@@ -102,7 +102,7 @@ export default function Index() {
             <input
               id="announcement"
               type="text"
-              placeholder="e.g., Sale 50% Off! Use code: SALE50"
+              placeholder="Enter announcement text..."
               value={announcement}
               onChange={(e) => setAnnouncement(e.target.value)}
               style={{
