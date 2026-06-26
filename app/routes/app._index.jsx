@@ -97,7 +97,7 @@ export default function Index() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "24px" }}>
             <label htmlFor="announcement" style={{ fontSize: "12px", fontWeight: "500", color: "#303030" }}>
-              Announcement Message
+              Announcement Text
             </label>
             <input
               id="announcement"
