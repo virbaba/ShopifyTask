@@ -48,6 +48,7 @@ api_version = "2026-07"
 redirect_urls = [
   "https://shopify-announcement-app-w2fp.onrender.com/auth/callback",
   "https://shopify-announcement-app-w2fp.onrender.com/auth/shopify",
+  "https://shopify-announcement-app-w2fp.onrender.com/auth/shopify/callback",
   "https://shopify-announcement-app-w2fp.onrender.com/api/auth"
 ]
 
