@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "05f00a482c1a7af029863c43c0c164f2"
-application_url = "https://example.com"
+application_url = "https://shopify-announcement-app-w2fp.onrender.com/"
 embedded = true
 name = "adaptive-deal-app"
 
@@ -45,7 +45,11 @@ api_version = "2026-07"
   topics = [ "app/scopes_update" ]
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://shopify-announcement-app-w2fp.onrender.com/auth/callback",
+  "https://shopify-announcement-app-w2fp.onrender.com/auth/shopify",
+  "https://shopify-announcement-app-w2fp.onrender.com/api/auth"
+]
 
 [build]
 include_config_on_deploy = true
