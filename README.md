@@ -9,7 +9,7 @@ A Shopify embedded app built using the modern React Router (v7) Shopify framewor
 When you visit the deployed Render URL (e.g., `https://shopify-announcement-app-w2fp.onrender.com/`), you will see a clean landing page with a login form:
 
 1. **Enter your Shopify Development Store Domain** (e.g., `announcement-test-store-2p2lpp1v.myshopify.com`) into the **Shop domain** input field.
-2. Click **Log in / Install**.
+2. Click **Log in**.
 3. You will be redirected to your Shopify Admin interface to approve the app installation.
 4. Once installed, you will be redirected to the **Announcement Banner Admin** dashboard inside your Shopify Admin where you can type your announcement and save it!
 
